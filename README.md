@@ -7,6 +7,4 @@
 ### Cafe Website
 A simple website showcasing the information of a cafe including the menu, staff, location and contact information. The website is mainly built around html, css and bootstrap. 
 
-<img src="/_screenshots/1_cafe-website/main.png"  width="300" height="300">
-<img src="/_screenshots/1_cafe-website/menu.png"  width="300" height="300">
-<img src="/_screenshots/1_cafe-website/location_form.png"  width="300" height="300">
+<img src="/_screenshots/1_cafe-website/main.png"  width="300" height="300">  <img src="/_screenshots/1_cafe-website/menu.png"  width="300" height="300">  <img src="/_screenshots/1_cafe-website/location_form.png"  width="300" height="300">
