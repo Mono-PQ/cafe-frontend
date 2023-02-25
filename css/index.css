@@ -1,0 +1,55 @@
+#logo{
+    width: 60px;
+    height: 60px;
+} 
+
+.carouselimg{
+    width: 100%;
+    height:100%;
+}
+
+article{
+    background-image: url(cafebackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img{
+    width: 100%;
+    height: 200px;
+    /*max-height:200px;*/
+}
+
+#privacy{
+    padding: 2px;
+    margin: 2px 2px 0px 2px;
+    margin-right: 10px;
+}
+
+#tou{
+    padding: 2px;
+    margin: 2px 2px 0px 2px;
+    margin-bottom: none;
+}
+
+footer{
+    font-size: 14px;
+    margin: none;
+}
+
+address{
+    padding-bottom: 4px;
+    margin-bottom: none;
+}
+
+textarea{
+    min-width: 100%;
+}
+
+.card-img-top{
+    height: 200px;
+}
+
+

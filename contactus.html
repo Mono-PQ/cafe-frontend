@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./libs/jquery/jquery.min.js"></script>
+    <script src="./libs/popper/popper.min.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#DFA257"> 
+    <!-- iOS support -->
+    <link rel="apple-touch-icon" href="./assets/icons/favicon-96x96-dunplab-manifest-32227.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffffff">
+    <title>&#9749; Bright Cafe-Join Memberships</title>
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+        <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+            <img id="logo" src="./assets/img/myLogo.png">
+        </a>
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#toggleNavbar"
+        aria-controls="toggleNavbar" aria-expanded="false"
+        aria-label="toggleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleNavbar">
+            <div class="navbar-nav mr-sm-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-item nav-link" href="menu.html">Menu</a>
+                <a class="nav-item nav-link" href="promotion.html">Promotion & Rewards</a>
+                <a class="nav-item nav-link" href="contactus.html">Contact Us</a> 
+            </div>
+        </div>
+        <form class="form-inline">
+            <div class="input-group" role="group">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn btn-outline-light" type="submit">Go</button>
+            </div>
+        </form>
+    </nav>
+    <header id="top_banner" class="container-fluid p-0">
+        <img src="./assets/img/myBanner.png" alt="Bright Cafe Banner" class="img-fluid">
+    </header>
+    <article>
+        <div class="container bg-white">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+            <h1>Find us here</h1>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div id="map" class="embed-responsive embed-responsive-4by3">
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <p>For any enquiries, you may contact us via one of the following channels</p>
+                    <table id="contacts">
+                        <tr>
+                            <td>Phone No.:</td>
+                            <td>+65 123 4567</td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><a href="mailto:brightcafenquiries@gmail.com">brightcafeenquiries@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>Bright Cafe, Jurong East Street 21, #01-00, Singapore 123456</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br><br>
+            <section class="content" id="feedbackForm">
+                <h1>Share your thoughts with us</h1>
+                <br>
+                <p>If you have any thoughts and feedback regarding your visit, our services or food quality, feel 
+                    free to drop us your concern using the feedback form below. Anonymous submission is welcomed too.
+                </p>
+                <p>Please include your contact details (email or mobile no.) if you would like us to contact you
+                    regarding your feedback. 
+                </p>
+                <form id="contactus" class="needs-validation" method="POST" action="formsubmission.html" novalidate>
+                    <fieldset class="form-group">
+                        <legend class="text-secondary">Personal Particulars</legend>
+                        <div>
+                            <label for="title" class="text-secondary">Salutation*:</label>
+                            <select class="form-control" id="fbTitle" required>
+                                <option value="Mr">Mr</option>
+                                <option value="Ms">Ms</option>
+                                <option value="Miss">Miss</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Mdm">Mdm</option>
+                                <option value="Dr">Dr</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="name" class="text-secondary">Full Name*:</label>
+                            <input type="text" class="form-control" id="fbName" placeholder="Enter your name" required>
+                            <div class="invalid-feedback">Please enter your full name.</div>
+                        </div>
+                        <br>
+                        <div>
+                            <div>
+                                <label for="email" class="text-secondary">Email:*</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="mobile" class="text-secondary">Mobile No:*</label>
+                                <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number" required>
+                                <div class="invalid-feedback">Please enter your mobile number.</div>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="message">Message:*</label>
+                                <textarea name="message" id="message" placeholder="Enter your message here" required></textarea> 
+                                <div class="invalid-feedback">Please enter your message for us.</div>
+                            </div>
+                            <br>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <legend class="text-secondary">Acknowledgements</legend>
+                        <div class="form-check">
+                            <input type="checkbox" name="fbterms" id="fbterms" class="form-check-input" required>
+                            <label for="fbterms" class="form-check-label">I agree to the Bright Cafe's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</label>
+                            <div class="invalid-feedback">Please agree to Bright Cafe's privacy policy and terms of use.</div>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="fbpdpa" id="fbpdpa" class="form-check-input" required>
+                            <label for="fbpdpa" class="form-check-label">By submitting this form, you agree to provide your personal information for the purposes of administering and managing your feedback. In the event if you provide your contact details, we may contact you to address your concerns. 
+                                If you have any further queries, you may write in to <a href="mailto:brightcafedpo@gmail.com">brightcafedpo@gmail.com</a>. </label> 
+                            <div class="invalid-feedback">Please agree to share your personal information for the purpose of administering your feedback.</div>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Submit" class="btn btn-warning">
+                    <input type="reset" value="Reset" class="btn btn-light">
+
+                </form>
+                <br><br>
+            </section>
+        </div>
+    </article>
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div class="col-12 text-center">
+                <a href="#" class="d-sm-inline-block text-muted" id="privacy">Privacy Policy</a>
+                <a href="#" class="d-sm-inline-block text-muted" id="tou">Terms of Use</a>
+            </div>
+            <div class="col-12 text-center">
+                <address class="text-muted">The Bright Cafe&#174; &#9749; Jurong East Street 21, Singapore 123456 &#9742;(+65)6123 4567</address>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Feedback Form Validation -->
+    <script type="text/javascript">
+        var form = document.querySelector('.needs-validation');
+
+        form.addEventListener('submit', function(event){
+            if(form.checkValidity() === false){
+                event.preventDefault(); 
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        })
+
+        function initMap() {
+        // The location of bright cafe
+        const brightcafe = { lat: 1.33335, lng: 103.74232 };
+        // The map, centered at bright cafe
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: brightcafe,
+        });
+        // The marker, positioned at bright cafe
+        const marker = new google.maps.Marker({
+          position: brightcafe,
+          map: map,
+          icon: "./assets/img/Cafe_googlemarker2.png"
+        });
+
+        // Pan to current location
+        infoWindow = new google.maps.InfoWindow();
+        const locationButton = document.createElement("button");
+        locationButton.textContent = "Pan to Current Location";
+        locationButton.classList.add("custom-map-control-button");
+        map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+        locationButton.addEventListener("click", () => {
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                    const pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude,
+                    };
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent("Location found.");
+                    infoWindow.open(map);
+                    map.setCenter(pos);
+                    },
+                    () => {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                    }
+                );
+                } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+                }
+            });
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(
+            browserHasGeolocation
+            ? "Error: The Geolocation service failed."
+            : "Error: Your browser doesn't support geolocation."
+        );
+        infoWindow.open(map);
+      }
+    </script>
+
+    <!-- Google Map -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4oTMq0bAVPzSibJzxQfJqHjZqjUA9bPk&callback=initMap"
+    type="text/javascript"></script>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>

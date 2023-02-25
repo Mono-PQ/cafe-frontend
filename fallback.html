@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./libs/jquery/jquery.min.js"></script>
+    <script src="./libs/popper/popper.min.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#DFA257"> 
+    <!-- iOS support -->
+    <link rel="apple-touch-icon" href="./assets/icons/favicon-96x96-dunplab-manifest-32227.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffffff">
+    <title>&#9749; Bright Cafe-Offline</title>
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+        <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+            <img id="logo" src="./assets/img/myLogo.png">
+        </a>
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#toggleNavbar"
+        aria-controls="toggleNavbar" aria-expanded="false"
+        aria-label="toggleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleNavbar">
+            <div class="navbar-nav mr-sm-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-item nav-link" href="menu.html">Menu</a>
+                <a class="nav-item nav-link" href="promotion.html">Promotion & Rewards</a>
+                <a class="nav-item nav-link" href="contactus.html">Contact Us</a> 
+            </div>
+        </div>
+        <form class="form-inline">
+            <div class="input-group" role="group">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn btn-outline-light" type="submit">Go</button>
+            </div>
+        </form>
+    </nav>
+    <header id="top_banner" class="container-fluid p-0">
+        <img src="./assets/img/myBanner.png" alt="Bright Cafe Banner" class="img-fluid">
+    </header>
+    <div class="container bg-white text-secondary text-center">
+        <h5>Sorry!</h5>
+        <p>You're currently offline and unable to view this page.</p>
+        <a href="index.html" class="btn-warning">Go to Homepage</a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div class="col-12 text-center">
+                <a href="#" class="d-sm-inline-block text-muted" id="privacy">Privacy Policy</a>
+                <a href="#" class="d-sm-inline-block text-muted" id="tou">Terms of Use</a>
+            </div>
+            <div class="col-12 text-center">
+                <address class="text-muted">The Bright Cafe&#174; &#9749; Jurong East Street 21, Singapore 123456 &#9742;(+65)6123 4567</address>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

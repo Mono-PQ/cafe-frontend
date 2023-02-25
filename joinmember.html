@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./libs/jquery/jquery.min.js"></script>
+    <script src="./libs/popper/popper.min.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#DFA257"> 
+    <!-- iOS support -->
+    <link rel="apple-touch-icon" href="./assets/icons/favicon-96x96-dunplab-manifest-32227.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffffff">
+    <title>&#9749; Bright Cafe-Join Memberships</title>
+
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+        <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+            <img id="logo" src="./assets/img/myLogo.png">
+        </a>
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#toggleNavbar"
+        aria-controls="toggleNavbar" aria-expanded="false"
+        aria-label="toggleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleNavbar">
+            <div class="navbar-nav mr-sm-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-item nav-link" href="menu.html">Menu</a>
+                <a class="nav-item nav-link" href="promotion.html">Promotion & Rewards</a>
+                <a class="nav-item nav-link" href="contactus.html">Contact Us</a> 
+            </div>
+        </div>
+        <form class="form-inline">
+            <div class="input-group" role="group">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn btn-outline-light" type="submit">Go</button>
+            </div>
+        </form>
+    </nav>
+    <header id="top_banner" class="container-fluid p-0">
+        <img src="./assets/img/myBanner.png" alt="Bright Cafe Banner" class="img-fluid">
+    </header>
+    <article>
+        <div class="container bg-white">
+            <!-- Show user the current page and allow us of navigation using a breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="promotion.html">Promotion & Rewards</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Join Memberships</li>
+                </ol>
+            </nav>
+
+            <!-- Bright Cafe's Membership Form -->
+            <section class="content">
+                <h1 class="text-dark">Bright Cafe Membership Form</h1>
+                <br>
+                <!-- Note: The novalidate attribute disable the browser's default validation so that js code runs. -->
+                <form id="memberForm" class="needs-validation" method="POST" action="formsubmission.html" novalidate>
+                    <fieldset class="form-group">
+                        <legend class="text-secondary">Personal Particulars</legend>
+
+                        <div class="col">
+                            <label for="title" class="text-secondary">Salutation*:</label>
+                            <select class="form-control" id="title" required>
+                                <option value="Mr">Mr</option>
+                                <option value="Ms">Ms</option>
+                                <option value="Miss">Miss</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Mdm">Mdm</option>
+                                <option value="Dr">Dr</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="col">
+                            <label for="name" class="text-secondary">Full Name*:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            <div class="invalid-feedback">Please enter your full name.</div>
+                        </div>
+                        
+                        <br>
+                        <div class="col">
+                            <label for="email" class="text-secondary">Email:*</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <br>
+                        <div class="col">
+                            <label for="mobile" class="text-secondary">Mobile No:*</label>
+                            <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number" required>
+                            <div class="invalid-feedback">Please enter your mobile number.</div>
+                        </div>
+                        <br>
+                        <div class="col">
+                            <label for="bdmonth" class="text-secondary">Date of Birth:*</label>
+                            <input type="date" class="form-control" name="birthday" id="birthday" required>
+                            <div class="invalid-feedback">Please indicate your date of birth.</div>
+                            <div id="validatedob"></div>
+                        </div>
+                        <br>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <legend class="text-secondary">Acknowledgements</legend>
+                        <div class="form-check">
+                            <input type="checkbox" name="newsletter" id="newsletter" class="form-check-input" checked>
+                            <label for="newsletter" class="form-check-label">Sign up for our newsletter for exclusive promotions and offers from Bright cafe via email and SMS.</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="terms" id="terms" class="form-check-input" required> 
+                            <label for="terms" class="form-check-label">I agree to the Bright Cafe's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</label>
+                            <div class="invalid-feedback">Please agree to Bright Cafe's privacy policy and terms of use.</div>
+                        </div>
+                        <br><br>
+                    </fieldset>
+                    <input type="submit" value="Submit" class="btn btn-warning">
+                    <input type="reset" value="Reset" class="btn btn-light">
+                    <br><br>
+                </form>
+            </section>
+        </div>
+    </article>
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div class="col-12" id="divMessage"></div>
+            <div class="col-12 text-center">
+                <a href="#" class="d-sm-inline-block text-muted" id="privacy">Privacy Policy</a>
+                <a href="#" class="d-sm-inline-block text-muted" id="tou">Terms of Use</a>
+            </div>
+            <div class="col-12 text-center">
+                <address class="text-muted">The Bright Cafe&#174; &#9749; Jurong East Street 21, Singapore 123456 &#9742;(+65)6123 4567</address>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var form = document.querySelector('.needs-validation');
+
+        form.addEventListener('submit', function(event){
+            if(form.checkValidity() === false){
+                event.preventDefault(); 
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        })
+
+        // Note: Not working, need further research
+        // document.getElementById("birthday").addEventListener("submit", function(){
+        //     // Create a date variable which stores the current day at 00:00 local time.
+        //     let today = new Date();
+        //     today.setHours(0,0,0,0);
+
+        //     // Parse the provided date in the default YYYY-MM-DD format.
+        //     let birthdate = document.getElementById("birthday").value;
+
+        //     // Check whether the provided date is equal to or less than the current date.
+        //     if (birthdate >= today) {
+        //         document.getElementsByID("validatedob").innerHTML = "Please enter a valid date of birth.";
+        //       }
+        // });
+        
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

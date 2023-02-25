@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./libs/jquery/jquery.min.js"></script>
+    <script src="./libs/popper/popper.min.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#DFA257"> 
+    <!-- iOS support -->
+    <link rel="apple-touch-icon" href="./assets/icons/favicon-96x96-dunplab-manifest-32227.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffffff">
+    <title>&#9749; Bright Cafe-Menu</title>
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+        <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+            <img id="logo" src="./assets/img/myLogo.png">
+        </a>
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#toggleNavbar"
+        aria-controls="toggleNavbar" aria-expanded="false"
+        aria-label="toggleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleNavbar">
+            <div class="navbar-nav mr-sm-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-item nav-link" href="menu.html">Menu</a>
+                <a class="nav-item nav-link" href="promotion.html">Promotion & Rewards</a>
+                <a class="nav-item nav-link" href="contactus.html">Contact Us</a> 
+            </div>
+        </div>
+        <form class="form-inline">
+            <div class="input-group" role="group">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn btn-outline-light" type="submit">Go</button>
+            </div>
+        </form>
+    </nav>
+    <header id="top_banner" class="container-fluid p-0">
+        <img src="./assets/img/myBanner.png" alt="Bright Cafe Banner" class="img-fluid">
+    </header>
+    <article>
+        <!-- Quick links to different menu items -->
+        <div class="container bg-white">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                </ol>
+            </nav>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link  text-secondary active" href="#festive_meal">Festive</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-secondary" href="#mains_meal">Mains</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-secondary" href="#sides_meal">Sides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-secondary" href="#cakes_meal">Cakes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-secondary" href="#beverages_meal">Beverages</a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!-- Menu items in the form of cards -->
+        <div class="container bg-white">
+            <div class="row">
+                <div class="col text-secondary" id="festive_meal">
+                    <h3>Festive</h3>
+                </div>
+            </div>
+            <div class="row" id="menu">
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/festive_grilledsalmon.jpg" alt="Grilled Salmon">
+                    <h6 class="card-header text-center">&#128031; Grilled Salmon</h6>
+                    <div class="card-body">
+                        <p>Salmon fillet, olive oil, garlic powder, minced onion. <br><br>
+                            There's no healthier, easier, or faster summer entree than a perfect piece of grilled salmon.
+                        </p>
+                        <h6>$13.90</h6>
+                        <em>Remarks</em>
+                        <textarea name="grilledsalmon" id="grilledsalmon"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/festive_roastchicken.jpg" alt="Roasted Chicken">
+                    <h6 class="card-header text-center">&#128020; Roasted Chicken</h6>
+                    <div class="card-body">
+                        <p>Herb butter, chicken breasts, lemon, honey, dijon mustard<br><br>
+                            This roast chicken is a great dish for creating cozy family moments around the table.
+                        </p>
+                        <h6>$11.90</h6>
+                        <em>Remarks</em>
+                        <textarea name="roastchicken" id="roastchicken"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/festive_spicyribs.jpg" alt="Spicy Ribs">
+                    <h6 class="card-header text-center">&#128055; Spicy Ribs</h6>
+                    <div class="card-body">
+                        <p>Baby back ribs, dark brown sugar, cider vineger, beef broth, Worcestershire sauce<br><br>
+                            Enjoy spicy ribs and blast all your stress away with the spices.
+                        </p>
+                        <h6>$15.60</h6>
+                        <em>Remarks</em>
+                        <textarea name="spicyribs" id="spicyribs"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-secondary" id="mains_meal">
+                    <h3>Mains</h3>
+                </div>
+            </div>
+            <div class="row">
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/main_baconbreakfastplatter.jpg" alt="Breakfast Platter">
+                    <h6 class="card-header text-center">&#129370; Breakfast Platter</h6>
+                    <div class="card-body">
+                        <p>Bacon, scrambled eggs, apple cider vineger,maple syrup, pancakes <br><br>
+                            What could be better as a weekend breakfast than a fall-inspired polenta breakfast platter.
+                        </p>
+                        <h6>$7.90</h6>
+                        <em>Remarks</em>
+                        <textarea name="breakfastplatter" id="breakfastplatter"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/main_beefsteak.jpg" alt="Beef Steak">
+                    <h6 class="card-header text-center">&#128046; Beef Steak</h6>
+                    <div class="card-body">
+                        <p>Beef steak, balsamic vineger, soy sauce, dijon mustard, worcestershire<br><br>
+                            Steaks are like wine – the more you spend, the better they are. Juicier, more flavour, more tender, no random bits of sinew throughout.
+                        </p>
+                        <h6>$17.90</h6>
+                        <em>Remarks</em>
+                        <textarea name="beefsteak" id="beefsteak"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/main_burger.jpg" alt="Burger">
+                    <h6 class="card-header text-center">&#128020; Burger &#128046; &#128031;</h6>
+                    <div class="card-body">
+                        <p>Chicken/Beef/Fish, dill pickle, cheddar cheese, tomato, red onion, ground chuck<br><br>
+                            These are the ultimate burgers. They are packed with flavor and reliably and juicy.
+                        </p>
+                        <h6>$8.90</h6>  
+                        <em>Remarks</em>
+                        <textarea name="burger" id="burger"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/main_roastedwholechicken.jpg" alt="Roasted Whole Chicken">
+                    <h6 class="card-header text-center">&#128020; Roasted Whole Chicken</h6>
+                    <div class="card-body">
+                        <p>Whole chicken, white wine, lemon, olive oil, garlic, rosemary<br><br>
+                            Enjoy a filling dinner with your family with this whole chicken that is juicy on the inside, and crispy on the outside.
+                        </p>
+                        <h6>$20.90</h6>
+                        <em>Remarks</em>
+                        <textarea name="roastedwholechicken" id="roastedwholechicken"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/main_salmonsalad.jpg" alt="Salmon Salad">
+                    <h6 class="card-header text-center">&#129367; Salmon Salad</h6>
+                    <div class="card-body">
+                        <p>Salmon fillets, red wine vineger, feta cheese, avocado<br><br>
+                            On a diet? No problem. We have a light, fresh and healthy grilled salmon Greek salad recipe. 
+                        </p>
+                        <h6>$12.90</h6>
+                        <em>Remarks</em>
+                        <textarea name="salmonsalad" id="salmonsalad"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-secondary" id="sides_meal">
+                    <h3>Sides</h3>
+                </div>
+            </div>
+            <div class="row">
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/side_fries.jpg" alt="French Fries">
+                    <h6 class="card-header text-center">&#127839; French Fries</h6>
+                    <div class="card-body">
+                        <p>Russet potatoes, peanut oil, sea salt <br><br>
+                            Do you know that decent French Fries need to be fried twice for their amazing texture and crispiness?
+                        </p>
+                        <h6>$3.50</h6>
+                        <em>Remarks</em>
+                        <textarea name="frenchfries" id="frenchfries"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/side_grilledsausage.jpg" alt="Grilled Sausage">
+                    <h6 class="card-header text-center">&#127789; Grilled Sausage</h6>
+                    <div class="card-body">
+                        <p>French sausage, sweet peppers, olive oil<br><br>
+                            Who doesn't like a good and decent grilled sausage? Just so tasty!
+                        </p>
+                        <h6>$4.00</h6>
+                        <em>Remarks</em>
+                        <textarea name="grilledsausage" id="grilledsausage"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/side_nugget.jpg" alt="Nuggets">
+                    <h6 class="card-header text-center">&#128020;Nuggets</h6>
+                    <div class="card-body">
+                        <p>Skinless chicken breast, almond milk, olive oil, eggs, cayenne<br><br>
+                            Our go-to Chicken Nuggets! Never a wrong choice. Enjoyed by both the old and young. 
+                        </p>
+                        <h6>$4.00</h6>
+                        <em>Remarks</em>
+                        <textarea name="nugget" id="nugget"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/side_pancakes.jpg" alt="Pancakes">
+                    <h6 class="card-header text-center">&#129374; Pancakes</h6>
+                    <div class="card-body">
+                        <p>Plain flour, butter, egg, baking powder, white sugar<br><br>
+                            Our best fluffy pancakes that you'll definitely fall in love with. Enjoy a great time sharing this with your loved ones.
+                        </p>
+                        <h6>$4.20</h6>
+                        <em>Remarks</em>
+                        <textarea name="pancake" id="pancake"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-secondary" id="cakes_meal">
+                    <h3>Cakes</h3>
+                </div>
+            </div>
+            <div class="row">
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/cake_chocolate.jpg" alt="Chocolate Cakes">
+                    <h6 class="card-header text-center">&#127856; Chocolate Cakes</h6>
+                    <div class="card-body">
+                        <p>Coconut milk, coconut oil, chocolate buttercream frosting<br><br>
+                            What's better than having a chocolate cake to escape from the daily monotony of life? 
+                        </p>
+                        <h6>$6.50</h6>
+                        <em>Remarks</em>
+                        <textarea name="chococake" id="chococake"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/cake_cupcakes.jpg" alt="Cupcakes">
+                    <h6 class="card-header text-center">&#129473; Cupcakes</h6>
+                    <div class="card-body">
+                        <p>Cake flour, eggs, baking soda, canola oil, vanilla extract<br><br>
+                            Made from everyday simple ingredients, yet so tasty that you might not be able to stop yourself from having one more.
+                        </p>
+                        <h6>$4.20</h6>
+                        <em>Remarks</em>
+                        <textarea name="cupcakes" id="cupcakes"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/cake_orangecake.jpg" alt="Orange Cake">
+                    <h6 class="card-header text-center">&#127818; Orange Cake</h6>
+                    <div class="card-body">
+                        <p>Orange, plain greek yogurt, pane degli angeli, butter, eggs<br><br>
+                            Zesty and tasty orange cake. A special treat for you and your friends. 
+                        </p>
+                        <h6>$7.20</h6>
+                        <em>Remarks</em>
+                        <textarea name="orangecake" id="orangecake"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/cake_tiramisu.jpg" alt="Orange Cake">
+                    <h6 class="card-header text-center">&#127854; Tiramisu</h6>
+                    <div class="card-body">
+                        <p>Mascarpone cheese, heavy whipping cream, cocoa powder, dark rum<br><br>
+                            Lost? Don't know which to choose? Fall back to the classic Tiramisu that is certainly well-liked by anyone. 
+                        </p>
+                        <h6>$7.20</h6>
+                        <em>Remarks</em>
+                        <textarea name="tiramisu" id="tiramisu"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-secondary" id="beverages_meal">
+                    <h3>Beverages</h3>
+                </div>
+            </div>
+            <div class="row">
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/beverage_americano.jpg" alt="Americano">
+                    <h6 class="card-header text-center">&#9749; Americano</h6>
+                    <div class="card-body">
+                        <p>Espresso, water<br><br>
+                            An Americano is an espresso-based drink designed to resemble coffee brewed in a drip filter, considered popular in the United States of America. 
+                        </p>
+                        <h6>$3.50</h6>
+                        <em>Remarks</em>
+                        <textarea name="americano" id="americano"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/beverage_cafelatte.jpg" alt="Caffè Latte">
+                    <h6 class="card-header text-center">&#9749; Cafe Latte</h6>
+                    <div class="card-body">
+                        <p>Simple syrup, french roast, espresso, foamed milk<br><br>
+                            The name “latte” is derived from the Italian words caffè latte, which means “milk coffee.”
+                        </p>
+                        <h6>$4.20</h6>
+                        <em>Remarks</em>
+                        <textarea name="caffelatte" id="caffelatte"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/beverage_cappucino.jpg" alt="Cappuccino">
+                    <h6 class="card-header text-center">&#9749; Cappucino</h6>
+                    <div class="card-body">
+                        <p>Fresh milk, espresso coffee<br><br>
+                            Outside of Italy, cappuccino is a coffee drink that today is typically composed of a single espresso shot and hot milk, with the surface topped with foamed milk. 
+                        </p>
+                        <h6>$4.20</h6>
+                        <em>Remarks</em>
+                        <textarea name="cappuccino" id="cappuccino"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/beverage_chamomile.jpg" alt="Chamomile tea">
+                    <h6 class="card-header text-center">&#127804; Chamomile Tea</h6>
+                    <div class="card-body">
+                        <p>Chamomile tea, cinnamon stick, vanilla extract<br><br>
+                            Chamomile tea, used as a tonic and an antiseptic and in many herbal remedies, is made from English, or Roman, chamomile (Chamaemelum nobile) or German chamomile (Matricaria chamomilla).
+                        </p>
+                        <h6>$3.50</h6>
+                        <em>Remarks</em>
+                        <textarea name="chamomile" id="chamomile"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/beverage_ebtea.jpg" alt="English Breakfast Tea">
+                    <h6 class="card-header text-center">&#9749; English Breakfast Tea</h6>
+                    <div class="card-body">
+                        <p>English breakfast tea, rice milk, honey, boiling water<br><br>
+                            English breakfast tea is a black tea blend usually described as full-bodied, robust, rich and blended to go well with milk and sugar, in a style traditionally associated with a hearty English breakfast.
+                        </p>
+                        <h6>$3.50</h6>
+                        <em>Remarks</em>
+                        <textarea name="ebtea" id="ebtea"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card col-sm-4 border-0 mt-3">
+                    <img class="card-img-top img-fluid" src="./assets/img/menu/beverage_water.jpg" alt="Water">
+                    <h6 class="card-header text-center">&#129380; Plain water</h6>
+                    <div class="card-body">
+                        <p>Plain water<br><br>
+                            Nothing beats a good old water that keeps us hydrated, especially during persistently hot weather in Singapore.
+                        </p>
+                        <h6>$0.60</h6>
+                        <em>Remarks</em>
+                        <textarea name="water" id="water"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="mb-2 list-group">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add Remarks</li>
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" href="#">Add to Cart</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div class="col-12 text-center">
+                <a href="#" class="d-sm-inline-block text-muted" id="privacy">Privacy Policy</a>
+                <a href="#" class="d-sm-inline-block text-muted" id="tou">Terms of Use</a>
+            </div>
+            <div class="col-12 text-center">
+                <address class="text-muted">The Bright Cafe&#174; &#9749; Jurong East Street 21, Singapore 123456 &#9742;(+65)6123 4567</address>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/db.js"></script>
+    <script src="./js/ui.js"></script>
+</body>
+</html>
